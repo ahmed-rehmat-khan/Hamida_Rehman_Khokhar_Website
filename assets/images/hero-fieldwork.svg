@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1A365D"/><stop offset="55%" stop-color="#294f7a"/><stop offset="100%" stop-color="#1E3F20"/></linearGradient>
+  <radialGradient id="sun" cx="72%" cy="28%" r="35%"><stop offset="0%" stop-color="#F9F8F6" stop-opacity=".55"/><stop offset="45%" stop-color="#C86B45" stop-opacity=".18"/><stop offset="100%" stop-color="#C86B45" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1E3F20" stop-opacity=".2"/><stop offset="100%" stop-color="#102612"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<rect width="1600" height="1000" fill="url(#sun)"/>
+<ellipse cx="1180" cy="260" rx="220" ry="220" fill="#F9F8F6" opacity=".08" filter="url(#soft)"/>
+<!-- distant hills -->
+<path d="M0 620 C180 560, 360 590, 560 540 C760 490, 920 560, 1120 520 C1320 480, 1460 540, 1600 510 L1600 1000 L0 1000 Z" fill="#17341b" opacity=".55"/>
+<path d="M0 700 C220 650, 420 690, 640 640 C860 590, 1040 660, 1240 620 C1400 590, 1500 640, 1600 620 L1600 1000 L0 1000 Z" fill="url(#ground)"/>
+<!-- community circle suggestion -->
+<g opacity=".22" fill="#F9F8F6">
+  <ellipse cx="760" cy="760" rx="360" ry="90"/>
+</g>
+<g fill="#F9F8F6" opacity=".18">
+  <circle cx="560" cy="730" r="26"/><rect x="544" y="756" width="32" height="54" rx="10"/>
+  <circle cx="660" cy="742" r="24"/><rect x="646" y="766" width="28" height="50" rx="10"/>
+  <circle cx="760" cy="748" r="24"/><rect x="746" y="772" width="28" height="48" rx="10"/>
+  <circle cx="860" cy="740" r="24"/><rect x="846" y="764" width="28" height="50" rx="10"/>
+  <circle cx="960" cy="728" r="26"/><rect x="944" y="754" width="32" height="54" rx="10"/>
+  <circle cx="760" cy="700" r="28"/><rect x="742" y="728" width="36" height="58" rx="12"/>
+</g>
+<!-- tree -->
+<g transform="translate(180,420)" opacity=".28" fill="#102612">
+  <rect x="44" y="160" width="26" height="220" rx="6"/>
+  <circle cx="58" cy="130" r="110"/>
+  <circle cx="-10" cy="170" r="80"/><circle cx="126" cy="170" r="80"/>
+</g>
+<rect width="1600" height="1000" fill="#000" opacity=".06"/>
+<rect width="1600" height="1000" filter="url(#grain)" opacity=".55"/>
+<g font-family="Georgia, serif" fill="#F9F8F6">
+  <rect x="80" y="820" width="520" height="92" rx="16" fill="rgba(26,54,93,.45)"/>
+  <text x="110" y="862" font-size="28" font-weight="700">Fieldwork &amp; Community Education</text>
+  <text x="110" y="890" font-family="Arial, sans-serif" font-size="14" letter-spacing="2" fill="rgba(249,248,246,.75)">EDITORIAL VISUAL · HAMIDA RAHMAN KHOKHAR</text>
+</g>
+</svg>

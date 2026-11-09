@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Academic excellence visual">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9F8F6"/><stop offset="100%" stop-color="#eef2f6"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A365D"/><stop offset="100%" stop-color="#244777"/>
+    </linearGradient>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#1A365D" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#abg)"/>
+  <circle cx="1040" cy="120" r="170" fill="#C86B45" opacity="0.10"/>
+  <circle cx="140" cy="680" r="190" fill="#1E3F20" opacity="0.08"/>
+  <!-- books -->
+  <g filter="url(#ds)">
+    <rect x="160" y="420" width="420" height="70" rx="12" fill="#1A365D"/>
+    <rect x="190" y="355" width="380" height="70" rx="12" fill="#1E3F20"/>
+    <rect x="220" y="290" width="340" height="70" rx="12" fill="#C86B45"/>
+    <rect x="250" y="225" width="300" height="70" rx="12" fill="url(#navy)"/>
+    <g fill="rgba(249,248,246,.55)">
+      <rect x="545" y="238" width="10" height="44" rx="3"/>
+      <rect x="528" y="303" width="10" height="44" rx="3"/>
+      <rect x="538" y="368" width="10" height="44" rx="3"/>
+      <rect x="548" y="433" width="10" height="44" rx="3"/>
+    </g>
+  </g>
+  <!-- mortarboard -->
+  <g filter="url(#ds)" transform="translate(690,170)">
+    <polygon points="210,40 390,120 210,200 30,120" fill="#1A365D"/>
+    <polygon points="210,200 390,120 390,170 210,250 30,170 30,120" fill="#173053"/>
+    <rect x="200" y="120" width="20" height="150" rx="6" fill="#C86B45"/>
+    <circle cx="210" cy="285" r="16" fill="#C86B45"/>
+    <path d="M210 285 q60 30 70 95" fill="none" stroke="#C86B45" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- certificate card -->
+  <g filter="url(#ds)" transform="translate(700,430)">
+    <rect width="360" height="240" rx="18" fill="#fff" stroke="rgba(26,54,93,.10)"/>
+    <rect x="22" y="22" width="316" height="196" rx="12" fill="none" stroke="rgba(200,107,69,.45)" stroke-width="2"/>
+    <circle cx="180" cy="78" r="28" fill="rgba(200,107,69,.14)"/>
+    <path d="M168 78 l8 8 16-18" fill="none" stroke="#C86B45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="180" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#1A365D">Academic Credentials</text>
+    <text x="180" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2" fill="#1E3F20">M.PHIL · MA EPM · M.ED · B.ED · MSC</text>
+    <rect x="70" y="182" width="220" height="8" rx="4" fill="rgba(26,54,93,.10)"/>
+  </g>
+</svg>
